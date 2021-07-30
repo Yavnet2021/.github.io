@@ -7,6 +7,22 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+```
+var dataset = ee.ImageCollection('LANDSAT/LE07/C01/T1_32DAY_EVI')
+                  .filterDate('2020-01-01', '2020-12-31');
+var colorized = dataset.select('EVI');
+var colorizedVis = {
+  min: 0.0,
+  max: 1.0,
+  palette: [
+    'FFFFFF', 'CE7E45', 'DF923D', 'F1B555', 'FCD163', '99B718', '74A901',
+    '66A000', '529400', '3E8601', '207401', '056201', '004C00', '023B01',
+    '012E01', '011D01', '011301'
+  ],
+};
+Map.setCenter(105.089791088926,12.534845667599683, 6);
+Map.addLayer(colorized, colorizedVis, 'Colorized');
+```
 
 ```markdown
 Syntax highlighted code block

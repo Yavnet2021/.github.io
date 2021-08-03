@@ -1,12 +1,11 @@
-## Welcome to GitHub Pages
+## Welcome to learn Google Earth Engine
 
-You can use the [editor on GitHub](https://github.com/Yavnet2021/.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Google Earth Engine(GEE) combines a multi-petabyte catalog of satellite imagery and geospatial datasets with planetary-scale analysis capabilities and makes it available for scientists, researchers, and developers to detect changes, map trends, and quantify differences on the Earth's surface
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The Google Earth Engine is free registered account and all data have been stored in clouds, therefore you don't need a space of your marchine to store and spatial data. 
+### How to use code in GEE
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Code as a very powerful which can be runned in GEE, for example you just copy the code below and past it in ``New script`` window in GEE and ``run`` then you will see the result in the map below the script
 ```
 var dataset = ee.ImageCollection('LANDSAT/LE07/C01/T1_32DAY_EVI')
                   .filterDate('2020-01-01', '2020-12-31');
